@@ -1,0 +1,19 @@
+/*
+ * SearchComponent css File
+*/
+
+.SearchComponent {
+    /* propertys here */
+}
+.search-field-container{
+    
+}
+
+.searchlist-container{
+}
+  
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

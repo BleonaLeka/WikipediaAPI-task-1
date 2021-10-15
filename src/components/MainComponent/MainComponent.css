@@ -1,0 +1,13 @@
+/*
+ * MainComponent css File
+*/
+
+.MainComponent {
+    /* propertys here */
+}
+.container{
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
