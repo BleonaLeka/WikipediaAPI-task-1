@@ -22,8 +22,8 @@ class Card extends Component {
 
           <div className="card card-1">
             <p className="card__exit"><i className="fas fa-times"></i></p>
-            <h2 className="card__title">{this.props.title}</h2>
-            <div dangerouslySetInnerHTML={{__html: this.props.body}}></div>
+            <h2 className="card__title">{this.props.wikiList.title}</h2>
+            <div dangerouslySetInnerHTML={{__html: this.props.wikiList.snippet}}></div>
           </div>
 
         </div>
