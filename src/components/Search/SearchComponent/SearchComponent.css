@@ -2,18 +2,107 @@
  * SearchComponent css File
 */
 
-.SearchComponent {
-    /* propertys here */
-}
 .search-field-container{
-    
-}
+    font-family: Hack, monospace;
+    overflow:hidden;
+    margin: 20px 60px;
 
-.searchlist-container{
 }
-  
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: scroll;
+    max-height: 600px;
   }
+.cards::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+nav{
+  margin: 20px 60px;
+  background: #4e4242;
+}
+
+.menuItems{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menuItems span{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+li{
+    margin: 22px;
+}
+li a{
+        text-decoration: none;
+        color: #8f8f8f;
+        font-size: 20px;
+        font-weight: 400;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+}
+
+li a:hover{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.search-input {
+    background-color: #e3edf7;
+    padding: 2px 10px;
+    border: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #af29a4;
+    -webkit-appearance: none;
+    transition: all 240ms ease-out;
+  }
+  .search-input:focus {
+    
+        outline: none;    
+  }
+ 
+  .search-input::placeholder{
+        color: #5c6770;
+        font-size: 15px;
+  }
+  button{
+      background: #e3edf7;
+      border: none;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+  }
+.search-icon{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding: 2%;
+    color:rgb(141, 4, 4);
+    font-size: 20px;
+    font-weight: 400;
+}
+.profile{
+    float: right;
+}
+.avatar {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+ 

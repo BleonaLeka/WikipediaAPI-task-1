@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../Card/Card';
+import FooterComponent from '../Footer/FooterComponent';
 
 import SearchComponent from '../Search/SearchComponent/SearchComponent';
 import './MainComponent.css';
@@ -12,15 +13,13 @@ class MainComponent extends Component {
       };
   }
 
-  
-
-
   render() {
     return (
       <div className="container">
-        Welcome, Wikipedia Search
-        <SearchComponent></SearchComponent>
-        </div>
+        <SearchComponent username = "Bleona Leka" ></SearchComponent>
+        {/* Can call the component like this too  */}
+        <FooterComponent/> 
+      </div>
     );
   }
 }
