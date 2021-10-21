@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Card from '../../Card/Card';
 import './SearchComponent.css';
 import { FaSearch } from "react-icons/fa";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import AboutComponent from '../../About/AboutComponent';
 import ProfileComponent from '../../Profile/ProfileComponent';
 
@@ -13,8 +13,7 @@ class SearchComponent extends Component {
     this.state = {
       searchText: "",
       // Object to store data taken from fetch request.
-      wikipediaList: []
-
+      wikipediaList: [],
     };
   }
 
@@ -47,14 +46,13 @@ class SearchComponent extends Component {
 
   onSearch(e){
     e.preventDefault();
-    if(this.state.searchText)
-      this.requestHandler(this.state.searchText)
-    else
+    if(this.state.searchText) {
+      this.requestHandler(this.state.searchText);
+    } else
       // Display Note or warning : 
       // EX:  If search input is empty tell user to type sth
       alert("Warning")
   }
-
 
   //other way to render some data
   renderData() {

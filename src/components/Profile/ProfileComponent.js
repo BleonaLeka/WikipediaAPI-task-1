@@ -12,7 +12,7 @@ class ProfileComponent extends  Component {
 
     render(){
         return(
-            <div>
+            <div className="container">
                 This is profle page
             </div>
         )

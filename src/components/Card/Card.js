@@ -20,10 +20,9 @@ class Card extends Component {
     return (
       <div className="card-container">
 
-          <div className="card card-1">
-            <p className="card__exit"><i className="fas fa-times"></i></p>
+          <div className="card card-item">
             <h2 className="card__title">{this.props.wikiList.title}</h2>
-            <div dangerouslySetInnerHTML={{__html: this.props.wikiList.snippet}}></div>
+            <div className="card__extract" dangerouslySetInnerHTML={{__html: this.props.wikiList.snippet}}></div>
           </div>
 
         </div>
