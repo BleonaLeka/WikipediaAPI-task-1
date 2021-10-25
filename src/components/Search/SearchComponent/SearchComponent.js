@@ -12,7 +12,9 @@ class SearchComponent extends Component {
     super(props);
     this.state = {
       searchText: "",
+
       // Object to store data taken from fetch request.
+      
       wikipediaList: [],
     };
   }
