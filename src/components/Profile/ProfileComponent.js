@@ -6,12 +6,14 @@ class ProfileComponent extends  Component {
     constructor(props) {
         super(props);
         this.state = {
+            
             //Set all states here
         }
     }
 
-    render(){
+    render() {
         return(
+
             <div className="container">
                 This is profle page
             </div>

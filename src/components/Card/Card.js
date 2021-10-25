@@ -17,6 +17,7 @@ class Card extends Component {
   // componentDidUpdate(){}
 
   render() {
+
     return (
       <div className="card-container">
 
@@ -26,6 +27,7 @@ class Card extends Component {
           </div>
 
         </div>
+        
     );
   }
 }

@@ -6,11 +6,13 @@ class FooterComponent extends  Component {
     constructor(props) {
         super(props);
         this.state = {
+            
             //Set all states here
         }
     }
 
-    render(){
+    render() {
+
         return(
             <footer className="footer">
                 This is my Footer

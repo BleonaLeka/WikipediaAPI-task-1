@@ -6,7 +6,7 @@ import SearchComponent from '../Search/SearchComponent/SearchComponent';
 import './MainComponent.css';
 
 class MainComponent extends Component {
-  constructor(props){
+  constructor(props) {
   super(props);
       this.state = {
 
